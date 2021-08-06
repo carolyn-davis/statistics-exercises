@@ -33,6 +33,21 @@ both_rolled_2.mean()
 1/6 * 1/6
 #Ans: 0.027/0.0261
 
+
+
+# =============================================================================
+# np.random.choice([1,2,3,4, 5, 6], 4)   #generates a list of four random numbers in this list
+# rolls = np.random.choice([1,2,3,4,5,6], nrows * ncols).reshape(nrows, ncols)
+# #convert to data frame
+# df = pd.DataFrame(rolls)
+# 
+# #Add calculation column 
+# df['doubles'] = df[0] == df[1]
+# df.head()
+# =============================================================================
+
+
+
 # =============================================================================
 # 2.)If you flip 8 coins, what is the probability of getting exactly 3 heads? What is the 
 # probability of getting more than 3 heads?
@@ -79,6 +94,8 @@ woms_obs = np.random.normal(loc=170, scale=6, size=1_000_000)
 #comparing the arrays and setting the indexes earlier 
 (woms_obs > mens_obs).mean()
 #Ans: 0.172602
+
+#20% of the time 
 
 # =============================================================================
 # # 6.) When installing anaconda on a student's computer, there's a 1 in 250 chance that the 
